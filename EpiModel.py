@@ -75,7 +75,7 @@ class EpiModel(object):
             
             return ax
         except:
-            raise NotInitialized('You must call integrate() first')
+            raise Exception('You must call integrate() first')
     
     def __getattr__(self, name):
         """Dynamic method to return the individual compartment values"""
